@@ -11,20 +11,13 @@ function Projects() {
     },
     {
       id: 2,
-      title: "Shakespeare Genetic Algorithm",
-      description: "A full-stack application using genetic algorithms to evolve random text toward Shakespeare quotes. Features an interactive React frontend, Python backend for algorithm execution, and real-time visualization of the evolutionary process.",
-      technologies: ["TypeScript", "React", "Python", "Genetic Algorithm", "CSS3"],
-      link: "https://github.com/AndruTjalas1/Shakespeare-Genetic-Algorithm",
-    },
-    {
-      id: 3,
       title: "Personal Portfolio Website",
       description: "A React-based portfolio website showcasing my projects and skills with GitHub Pages deployment. Features responsive design, smooth navigation, and modern UI.",
       technologies: ["React", "CSS3", "GitHub Pages", "React Router"],
       link: "https://github.com/AndruTjalas1/Resume",
     },
     {
-      id: 4,
+      id: 3,
       title: "More Projects Coming Soon",
       description: "Check back soon for more projects! I'm constantly working on new ideas and side projects.",
       technologies: ["TBD"],
