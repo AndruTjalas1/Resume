@@ -18,6 +18,13 @@ function Projects() {
     },
     {
       id: 3,
+      title: "Shakespeare Genetic Algorithm",
+      description: "A genetic algorithm implementation that evolves random text to match Shakespeare quotes. Demonstrates evolutionary computation principles with population-based search and fitness evaluation.",
+      technologies: ["Genetic Algorithm", "Python", "Evolutionary Computation"],
+      link: "https://github.com/AndruTjalas1/Shakespeare-Genetic-Algorithm",
+    },
+    {
+      id: 4,
       title: "More Projects Coming Soon",
       description: "Check back soon for more projects! I'm constantly working on new ideas and side projects.",
       technologies: ["TBD"],
