@@ -19,15 +19,23 @@ jobs:
       with:
         node-version: '16'
     
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Build
+      run: npm run build
+    
     - name: Configure git
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
     
-    - name: Install dependencies
-      run: npm install
-    
-    - name: Deploy
-      run: npm run deploy
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Deploy to gh-pages
+      run: |
+        git checkout --orphan gh-pages
+        git rm -rf .
+        cp -r build/* .
+        touch .nojekyll
+        git add .
+        git commit -m "Deploy from main"
+        git push origin gh-pages -f
