@@ -25,6 +25,14 @@ function Projects() {
     },
     {
       id: 4,
+      title: "Deep Learning Projects",
+      description: "A collection of deep learning projects built with TensorFlow and Keras. Includes neural network implementations, computer vision models, and interactive web deployment showcasing machine learning applications.",
+      technologies: ["Deep Learning", "TensorFlow", "Python", "Vercel"],
+      link: "https://deep-learning-projects-hvkysc8z4-andrus-projects-c70032aa.vercel.app",
+      github: "https://github.com/AndruTjalas1/Deep-Learning-Projects",
+    },
+    {
+      id: 5,
       title: "More Projects Coming Soon",
       description: "Check back soon for more projects! I'm constantly working on new ideas and side projects.",
       technologies: ["TBD"],
@@ -54,10 +62,15 @@ function Projects() {
               ))}
             </div>
             {project.link !== "#" && (
-              <p style={{ marginTop: "1rem" }}>
+              <p style={{ marginTop: "1rem", display: 'flex', gap: '0.5rem' }}>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
-                  View Project →
+                  View {project.github ? "Live" : "Project"} →
                 </a>
+                {project.github && (
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
+                    GitHub →
+                  </a>
+                )}
               </p>
             )}
           </div>
