@@ -33,6 +33,13 @@ function Projects() {
     },
     {
       id: 5,
+      title: "C-Minus Compiler",
+      description: "A compiler implementation for the C-Minus language, a subset of C. Features lexical analysis, syntax parsing, semantic analysis, and code generation with complete compiler toolchain functionality.",
+      technologies: ["C", "Compiler Design", "Lexical Analysis", "Parser"],
+      link: "https://github.com/AndruTjalas1/C-Minus-Compiler",
+    },
+    {
+      id: 6,
       title: "More Projects Coming Soon",
       description: "Check back soon for more projects! I'm constantly working on new ideas and side projects.",
       technologies: ["TBD"],
