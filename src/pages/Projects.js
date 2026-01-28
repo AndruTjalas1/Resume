@@ -83,23 +83,6 @@ function Projects() {
           </div>
         ))}
       </div>
-
-      <section style={{ marginTop: "2rem" }}>
-        <h2>How to Add Your Projects</h2>
-        <div className="card">
-          <p>
-            To add your projects, edit the <code>projects</code> array in <code>src/pages/Projects.js</code>. 
-            Each project should have:
-          </p>
-          <ul style={{ marginLeft: "2rem" }}>
-            <li><strong>id:</strong> Unique identifier</li>
-            <li><strong>title:</strong> Project name</li>
-            <li><strong>description:</strong> Brief description</li>
-            <li><strong>technologies:</strong> Array of tech stack</li>
-            <li><strong>link:</strong> GitHub repo or project link</li>
-          </ul>
-        </div>
-      </section>
     </div>
   );
 }
