@@ -40,6 +40,14 @@ function Projects() {
     },
     {
       id: 6,
+      title: "Polygon",
+      description: "A work-in-progress web-based game where players progress through waves, purchase upgrades with branching options and strategic lockouts, and battle through an expansive map with epic boss fights.",
+      technologies: ["TypeScript", "Game Development", "Web Game"],
+      link: "https://polygon-gold.vercel.app",
+      github: "https://github.com/nolanrd04/Polygon",
+    },
+    {
+      id: 7,
       title: "More Projects Coming Soon",
       description: "Check back soon for more projects! I'm constantly working on new ideas and side projects.",
       technologies: ["TBD"],
