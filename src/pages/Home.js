@@ -50,7 +50,7 @@ function Home() {
             <a href="https://github.com/AndruTjalas1" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--secondary-color)', textDecoration: 'none', fontSize: '1.1rem' }}>
               <FaGithub /> GitHub
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--secondary-color)', textDecoration: 'none', fontSize: '1.1rem' }}>
+            <a href="https://www.linkedin.com/in/andru-tjalas" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--secondary-color)', textDecoration: 'none', fontSize: '1.1rem' }}>
               <FaLinkedin /> LinkedIn
             </a>
             <a href="mailto:andrutjalas@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--secondary-color)', textDecoration: 'none', fontSize: '1.1rem' }}>
