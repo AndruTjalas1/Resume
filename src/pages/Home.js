@@ -19,7 +19,7 @@ function Home() {
           behavior: 'smooth'
         });
       }
-    }, 100);
+    }, 500);
   };
 
   return (

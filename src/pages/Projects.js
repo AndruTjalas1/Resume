@@ -59,6 +59,7 @@ function Projects() {
     <div className="page">
       <h1>My Projects</h1>
       
+      <section id="projects">
       <div className="card">
         <p>
           Below are some of my notable projects. I focus on building functional, user-friendly applications 
@@ -91,6 +92,7 @@ function Projects() {
           </div>
         ))}
       </div>
+      </section>
     </div>
   );
 }
