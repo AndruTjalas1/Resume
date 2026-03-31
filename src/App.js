@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -9,7 +9,7 @@ function App() {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="App">
         <nav className="navbar">
           <div className="nav-container">
