@@ -37,7 +37,7 @@ function Home() {
           </div>
           <div className="card">
             <h3><FaGraduationCap className="icon" /> Education</h3>
-            <p>Currently pursuing a Bachelor's degree in Computer Science with a 3.80 GPA, expected graduation May 2026.</p>
+            <p>Currently pursuing a Bachelor's degree in Computer Science with a 3.84 GPA, expected graduation May 2026.</p>
           </div>
         </div>
       </section>
