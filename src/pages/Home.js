@@ -1,8 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaCode, FaRocket, FaGraduationCap, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
+// ADJUST THIS VALUE TO FINE-TUNE THE SCROLL POSITION (in pixels)
+const SCROLL_OFFSET = 100;
+
 function Home() {
+  const navigate = useNavigate();
+
+  const handleSectionScroll = (path, sectionId) => {
+    navigate(path);
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementPosition - SCROLL_OFFSET,
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
+  };
+
   return (
     <div className="page">
       <div className="hero">
@@ -27,15 +46,15 @@ function Home() {
       <section>
         <h2>Quick Summary</h2>
         <div className="grid">
-          <div className="card">
+          <div onClick={() => handleSectionScroll('/about', 'technical-skills')} className="card" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>
             <h3><FaCode className="icon" /> Skills</h3>
             <p>JavaScript, React, Python, Node.js, MongoDB, and more. Check out the About page for a complete list.</p>
           </div>
-          <div className="card">
+          <div onClick={() => handleSectionScroll('/projects', 'projects')} className="card" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>
             <h3><FaRocket className="icon" /> Projects</h3>
             <p>I work on both personal projects and side projects. Visit the Projects page to see what I've built.</p>
           </div>
-          <div className="card">
+          <div onClick={() => handleSectionScroll('/about', 'education')} className="card" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>
             <h3><FaGraduationCap className="icon" /> Education</h3>
             <p>Currently pursuing a Bachelor's degree in Computer Science with a 3.84 GPA, expected graduation May 2026.</p>
           </div>

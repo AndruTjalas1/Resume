@@ -5,12 +5,12 @@ function About() {
   return (
     <div className="page">
       <h1>About Me</h1>
-      <section>
+      <section id="education">
         <h2><FaBook className="icon" /> Education</h2>
         <div className="card">
           <h3>Bachelor's Degree in Computer Science</h3>
           <p><strong>Grand Canyon University</strong> - Phoenix, Arizona</p>
-          <p><strong>GPA:</strong> 3.84 | <strong>Expected Graduation:</strong> May 2026</p>
+          <p><strong>GPA:</strong> 3.84 | <strong>Expected Graduation:</strong> April 2026</p>
           <p>Honors College</p>
           <h4 style={{ marginTop: '1rem', marginBottom: '0.5rem' }}>Relevant Coursework:</h4>
           <div className="card-tags">
@@ -37,7 +37,7 @@ function About() {
         </div>
       </section>
 
-      <section>
+      <section id="technical-skills">
         <h2><FaLaptopCode className="icon" /> Technical Skills</h2>
         <div className="grid">
           <div className="card">

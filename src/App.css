@@ -138,6 +138,11 @@ body {
   }
 }
 
+/* Section Scroll Behavior */
+section {
+  scroll-margin-top: 100px;
+}
+
 .page h1 {
   color: var(--primary-color);
   margin-bottom: 1.5rem;
