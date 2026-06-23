@@ -26,7 +26,7 @@ function Home() {
     <div className="page">
       <div className="hero">
         <h1>Hi, I'm Andru Tjalas</h1>
-        <p className="subtitle">Computer Science Student | Full Stack Developer</p>
+        <p className="subtitle">Computer Science Graduate | Full Stack Developer</p>
         <div className="hero-buttons">
           <Link to="/projects" className="btn btn-primary">View My Work</Link>
           <Link to="/about" className="btn btn-secondary">Learn More</Link>
@@ -37,7 +37,7 @@ function Home() {
         <h2>Welcome to My Portfolio</h2>
         <div className="card">
           <p>
-            I'm a passionate computer science student at Grand Canyon University with a focus on full-stack web development. 
+            I'm a passionate computer science graduate from Grand Canyon University with a focus on full-stack web development. 
             This portfolio showcases my projects, skills, and experience in building modern web applications.
           </p>
         </div>
@@ -56,7 +56,7 @@ function Home() {
           </div>
           <div onClick={() => handleSectionScroll('/about', 'education')} className="card" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>
             <h3><FaGraduationCap className="icon" /> Education</h3>
-            <p>Currently pursuing a Bachelor's degree in Computer Science with a 3.84 GPA, expected graduation May 2026.</p>
+            <p>Graduated with a Bachelor's degree in Computer Science, Summa Cum Laude, with a 3.86 GPA in April 2026.</p>
           </div>
         </div>
       </section>

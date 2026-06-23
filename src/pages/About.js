@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBook, FaLaptopCode, FaTools, FaBriefcase, FaHeart } from 'react-icons/fa';
+import { FaBook, FaLaptopCode, FaTools, FaBriefcase, FaHeart, FaTrophy } from 'react-icons/fa';
 
 function About() {
   return (
@@ -10,8 +10,8 @@ function About() {
         <div className="card">
           <h3>Bachelor's Degree in Computer Science</h3>
           <p><strong>Grand Canyon University</strong> - Phoenix, Arizona</p>
-          <p><strong>GPA:</strong> 3.84 | <strong>Expected Graduation:</strong> April 2026</p>
-          <p>Honors College</p>
+          <p><strong>GPA:</strong> 3.86 | <strong>Graduated:</strong> April 2026</p>
+          <p>Honors College – Summa Cum Laude</p>
           <h4 style={{ marginTop: '1rem', marginBottom: '0.5rem' }}>Relevant Coursework:</h4>
           <div className="card-tags">
             <span className="tag">Algorithms & Data Structures</span>
@@ -85,6 +85,7 @@ function About() {
               <span className="tag">CI/CD</span>
               <span className="tag">Azure</span>
               <span className="tag">AWS</span>
+              <span className="tag">Terraform</span>
             </div>
           </div>
 
@@ -111,12 +112,22 @@ function About() {
       </section>
 
       <section>
+        <h2><FaTrophy className="icon" /> Awards & Competitions</h2>
+        <div className="card">
+          <h3>1st Place – GCU Cloudathon</h3>
+          <p><strong>Grand Canyon University</strong></p>
+          <p><strong>2026</strong></p>
+          <p>Competed in GCU's Cloudathon and placed 1st out of all participating teams.</p>
+        </div>
+      </section>
+
+      <section>
         <h2><FaBriefcase className="icon" /> Professional Experience</h2>
         
         <div className="card">
           <h3>Enterprise Platform Solutions Intern</h3>
           <p><strong>Paychex</strong> - Phoenix, AZ</p>
-          <p><strong>September 2025 - Present</strong></p>
+          <p><strong>September 2025 - April 2026</strong></p>
           <p>Working with a team to develop a full stack web application for internal use within the company in line with the company's AI initiatives.</p>
           <h4 style={{ marginTop: '0.75rem', marginBottom: '0.5rem' }}>Tech Stack:</h4>
           <div className="card-tags">
@@ -128,20 +139,26 @@ function About() {
             <span className="tag">Azure</span>
             <span className="tag">PostgreSQL</span>
             <span className="tag">Jira</span>
+            <span className="tag">Confluence</span>
+            <span className="tag">Webex</span>
+            <span className="tag">Citrix</span>
             <span className="tag">GitHub</span>
+            <span className="tag">Miro</span>
           </div>
         </div>
 
         <div className="card">
           <h3>Technology Instructors Assistant</h3>
           <p><strong>Grand Canyon University</strong> - Phoenix, AZ</p>
-          <p><strong>September 2025 - Present</strong></p>
+          <p><strong>September 2025 - April 2026</strong></p>
           <p>I assist students by answering their questions and giving advice on their assignments in class and outside of class. I hold office hours in the lab so students can come work on their projects outside of class time as well as ask questions.</p>
           <h4 style={{ marginTop: '0.75rem', marginBottom: '0.5rem' }}>Tech Stack:</h4>
           <div className="card-tags">
             <span className="tag">Unity</span>
             <span className="tag">C#</span>
             <span className="tag">C</span>
+            <span className="tag">Flex</span>
+            <span className="tag">Bison</span>
             <span className="tag">Linux</span>
             <span className="tag">GitHub</span>
           </div>
